@@ -109,7 +109,6 @@ hr{
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    font-size: 1rem;
 }
 
 .card a:hover h5{
@@ -158,6 +157,11 @@ footer{
 
     h2{
         font-size: 6rem !important;
+    }
+    
+    /*   Card   */
+    .card a p{
+        font-size: 1.3rem;
     }
 
     /* Utils */
