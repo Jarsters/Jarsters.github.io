@@ -79,7 +79,7 @@ h2{
 }
 
 .item{
-    margin: .5rem auto;
+    padding: .5rem;
 }
 
 hr{
@@ -109,6 +109,7 @@ hr{
     text-decoration: none;
     color: black;
     font-weight: bolder;
+    font-size: .8rem;
 }
 
 .card a:hover h5{
@@ -130,10 +131,6 @@ hr{
     border-bottom: 2px solid rgba(0,0,0,.25);
     padding-bottom: .1rem;
 }
-
-/* .kategori a hr{
-    margin-left: 1.3rem;
-} */
 
 /* Footer */
 footer{
@@ -158,15 +155,28 @@ footer{
     h2{
         font-size: 6rem !important;
     }
-    
-    /*   Card   */
-    .card a p{
-        font-size: 1.3rem;
-    }
 
     /* Utils */
     .item{
         margin: 0;
     }
 
+}
+
+.something{
+    width: 80%;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    overflow: scroll;
+    margin: 40px auto;
+    white-space: nowrap;
+}
+
+.something .kotak{
+    display: inline-block;
+}
+
+.kotak{
+    margin: 10px;
+    text-align: center;
 }
