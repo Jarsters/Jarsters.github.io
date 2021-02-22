@@ -24,6 +24,7 @@
 
 /* Jumbotron */
 .jumbotron{
+    background-image: url(img/unsplash/tape.jpg);
     background-size: cover;
     height: 640px;
     text-align: center;
