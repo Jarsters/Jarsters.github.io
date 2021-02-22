@@ -4,7 +4,7 @@
 }
 
 .navbar-brand{
-    font-family: Viga, sans-serif !important;
+    font-family: Viga, sans-serif;
     font-size: 32px;
 }
 
@@ -24,7 +24,6 @@
 
 /* Jumbotron */
 .jumbotron{
-    background-image: url(img/unsplash/tape.jpg);
     background-size: cover;
     height: 640px;
     text-align: center;
@@ -79,7 +78,7 @@ h2{
 }
 
 .item{
-    padding: .5rem;
+    margin: .5rem auto;
 }
 
 hr{
@@ -109,7 +108,7 @@ hr{
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    font-size: .8rem;
+    font-size: 1.3rem;
 }
 
 .card a:hover h5{
@@ -130,6 +129,47 @@ hr{
     font-size: 1.8rem;
     border-bottom: 2px solid rgba(0,0,0,.25);
     padding-bottom: .1rem;
+}
+
+/* Pagination */
+.page{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 8px 8px;
+    margin-bottom: 0;
+    margin-left: 0;
+    line-height: 20px;
+    border: 3px dotted chocolate;
+    display: flex;
+    justify-content: center;
+    transition: .1s;
+}
+
+.pagination a i{
+    line-height: 20px;
+}
+
+.page.active{
+    font-weight: bold;
+    border: 2px solid rgb(241, 138, 20);
+}
+
+.page:hover{
+    border: 2px solid rgb(224, 143, 88);
+    color: rgb(11, 206, 255);
+    /* background-color: rgb(224, 122, 82); */
+    font-weight: bold;
+}
+
+.page.active:hover{
+    font-weight: bold;
+    color: black;
+    border: 2px solid rgb(241, 138, 20);
+}
+
+.pagination{
+    justify-content: center;
 }
 
 /* Footer */
@@ -156,27 +196,15 @@ footer{
         font-size: 6rem !important;
     }
 
+    /* Pagination */
+    .pagination{
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+
     /* Utils */
     .item{
         margin: 0;
     }
 
-}
-
-.something{
-    width: 80%;
-    background-color: rgba(0, 0, 0, .5);
-    color: white;
-    overflow: scroll;
-    margin: 40px auto;
-    white-space: nowrap;
-}
-
-.something .kotak{
-    display: inline-block;
-}
-
-.kotak{
-    margin: 10px;
-    text-align: center;
 }
