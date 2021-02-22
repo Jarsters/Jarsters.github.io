@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
       <!-- Viga -->
@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{url_for('static', filename='font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <title>Index</title>
   </head>
@@ -32,18 +32,9 @@
         </button>
         <div class="collapse navbar-collapse ms-auto" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            {% if title=="Home" %}
-              <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Home</a>
-              <a class="nav-link" href="{{url_for('katalog')}}">Katalog</a>
-            {% else %}
-              <a class="nav-link" href="{{url_for('index')}}">Home</a>
-              <a class="nav-link active" aria-current="page" href="{{url_for('katalog')}}">Katalog</a>
-            {% endif %}
-            {% if session['profile'] %}
-              <a class="btn btn-danger tombol" href="{{url_for('logout')}}">Logout</a>
-            {% else %}
-              <a class="btn btn-primary tombol" href="{{url_for('login')}}">Login</a>
-            {% endif %}
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="katalog.html">Katalog</a>
+            <a class="btn btn-primary tombol" href="#">Login</a>
           </div>
         </div>
       </div>
@@ -51,7 +42,7 @@
     <!-- Akhir Navigation -->
 
     <!-- Jumbotron -->
-    <div class="bg-light jumbotron" style="background-image: url(/static/img/unsplash/tape.jpg)">
+    <div class="bg-light jumbotron">
       <h2 class="title">Toko Alat Musik JarsTers</h2>
     </div>
     <!-- Akhir Jumbotron -->
@@ -65,14 +56,14 @@
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3500">
           <a href="#">
-            <img src="{{url_for('static', filename='img/unsplash/guitar-4.jpg')}}" class="d-block w-55 mx-auto" alt="Guitar 1">
+            <img src="img/unsplash/guitar-4.jpg" class="d-block w-55 mx-auto" alt="Guitar 1">
           </a>
         </div>
         <div class="carousel-item" data-bs-interval="3500">
-          <img src="{{url_for('static', filename='img/unsplash/guitar-5.jpg')}}" class="d-block w-55 mx-auto" alt="Guitar 2">
+          <img src="img/unsplash/guitar-5.jpg" class="d-block w-55 mx-auto" alt="Guitar 2">
         </div>
         <div class="carousel-item" data-bs-interval="3500">
-          <img src="{{url_for('static', filename='img/unsplash/guitar-6.jpg')}}" class="d-block w-55 mx-auto" alt="Guitar 3">
+          <img src="img/unsplash/guitar-6.jpg" class="d-block w-55 mx-auto" alt="Guitar 3">
         </div>
       </div>
     </div>
@@ -89,7 +80,7 @@
         <div class="col">
           <div class="card h-100">
             <a href="#">
-              <img src="{{url_for('static', filename='img/lostrug/baju-1.jpg')}}" class="card-img-top" alt="Baju 1">
+              <img src="img/lostrug/baju-1.jpg" class="card-img-top" alt="Baju 1">
               <div class="card-body">
                 <!-- Title Card -->
                 <h5 class="card-title text-center">Baju Legendaris Michael Jackson</h5>
@@ -101,7 +92,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="{{url_for('static', filename='img/lostrug/baju-2.jpg')}}" class="card-img-top" alt="Baju 2">
+            <img src="img/lostrug/baju-2.jpg" class="card-img-top" alt="Baju 2">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a short card.</p>
@@ -110,7 +101,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="{{url_for('static', filename='img/lostrug/baju-3.jpg')}}" class="card-img-top" alt="Baju 3">
+            <img src="img/lostrug/baju-3.jpg" class="card-img-top" alt="Baju 3">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -166,9 +157,6 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <!-- Footer -->
-
-
     <!-- Akhir Footer -->
 
     <!-- Optional JavaScript; choose one of the two! -->
