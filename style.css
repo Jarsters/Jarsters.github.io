@@ -22,11 +22,13 @@
     text-shadow: .8px .8px .5px rgba(65, 105, 22, 3);
 }
 
+/* Filter Untuk Layar kecil */
 .lg-down{
-    margin: 10px 0;
+    margin: 15px 0;
     overflow-x: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
+    margin-right: 5px;
 }
 
 .lg-down::-webkit-scrollbar{
@@ -34,7 +36,30 @@
 }
 
 .lg-down a{
-    margin: 0 400px;
+    margin: 15px 10px;
+}
+
+.lg-down i{
+    margin-top: -15px;
+    font-size: 20px;
+}
+
+.title-filter{
+    margin-bottom: 0;
+    font-family: Jomhuria, cursive;
+    font-size: 3.3rem;
+}
+
+.tombol-filter{
+    border: 1px solid #58515185;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.tombol-filter:hover{
+    background-color: #58515185;
+    color: white;
+    font-weight: 600;
 }
 
 /* Jumbotron */
