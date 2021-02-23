@@ -24,7 +24,7 @@
 
 .lg-down{
     margin: 10px 0;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
 }
